@@ -1,2 +1,2 @@
 # YouTube-Telegram-Bot
-A YouTube Telegram.
+A YouTube Telegram Bot.
