@@ -14,7 +14,6 @@ from pySmartDL import SmartDL
 from requests import Session
 from datetime import datetime
 from asyncio import sleep, create_task
-from threading import Thread
 import os, config
 
 app = Client(
