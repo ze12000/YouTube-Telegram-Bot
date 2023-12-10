@@ -1,3 +1,4 @@
+FROM nikolaik/python-nodejs:python3.9-nodejs18
 RUN apt-get update -y && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends ffmpeg \
     && apt-get clean \
@@ -5,4 +6,4 @@ RUN apt-get update -y && apt-get upgrade -y \
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
-RUN python3 main.py
+CMD python3 main.py
