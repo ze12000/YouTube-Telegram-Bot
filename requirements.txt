@@ -1,8 +1,8 @@
 pyrogram==2.0.106
-pysmartdl==0.9.15
-pyro-listener==2023.9.19
+pysmartdl
+pyro-listener
 youtube-search==2.1.2
-yt-dlp==2023.11.16
+yt-dlp
 requests==2.31.0
 tgcrypto==1.2.5
 datetime==5.3
