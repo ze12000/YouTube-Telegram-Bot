@@ -81,7 +81,6 @@ async def search(_: Client , message: Message):
     wait_msg = await ask.reply(emoji.MAGNIFYING_GLASS_TILTED_RIGHT)
     results = json.loads(Search(ask.text))
     if len(results) == 0: return await wait_msg.edit_text('- no results was found'.title(), reply_to_message_id = ask.id)
-    ids = ' '.join([result['id'] for result in results])
     callback_data = f'next 0 {ask.text}'
     firstone = results[0]
     yturl = url_prefix + firstone['url_suffix']
