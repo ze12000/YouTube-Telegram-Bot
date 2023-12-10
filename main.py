@@ -310,7 +310,7 @@ async def downloadURL(message ,url, _type):
         await wait_msg.edit_text('- Uploading...')
         func = InputMediaVideo if _type == 'v' else InputMediaAudio 
         await info_msg.edit_media(media = func(media = path ,caption = icaption.replace('```NOTE\nDOWNLOADING...```', f'\n\n- DOWNLOADED BY: @{app.me.username}')))
-        caption = "-Uploaded.\n- Download task took %s" % obj.get_dl_time(human=True)
+        caption = "- Uploaded.\n- Download task took %s" % obj.get_dl_time(human=True)
         await wait_msg.edit_text(caption)
     else: await wait_msg.edit_text('- An Error Has Been Occcured!')
     try:os.remove(path)
