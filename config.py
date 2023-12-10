@@ -1,7 +1,8 @@
-import os
+from os import getenv
+from dotenv import load_dotenv
 
-os.load_dotenv()
+load_dotenv()
 
-BOT_TOKEN = os.getenv('BOT_TOKEN')
-API_HASH = os.getenv('API_HASH')
-API_ID =  int(os.get('API_ID'))
+BOT_TOKEN = getenv('BOT_TOKEN')
+API_HASH = getenv('API_HASH')
+API_ID =  int(getenv('API_ID'))
