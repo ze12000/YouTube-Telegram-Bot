@@ -6,3 +6,4 @@ yt-dlp
 requests==2.31.0
 tgcrypto==1.2.5
 datetime==5.3
+python-dotenv
